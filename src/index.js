@@ -11,15 +11,12 @@ app.use(cors())
 dotenv.config();
 
 const PORT = process.env.PORT;
-const database = process.env.DATABASE_URL
 
-
-console.log(database)
 
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Selamat Datang di API SERVER KUHH');
+  res.send('Selamat Datang di API SERVER KUHHH  Tercinta');
 });
 
 app.use('/products', ProductController)
